@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joachim James Daudu | Personal Portfolio</title>
+<style>
+/* --- Global Styles --- */
+* { margin:0; padding:0; box-sizing:border-box; font-family:"Segoe UI", sans-serif; }
+body { scroll-behavior: smooth; }
+
+/* --- Sections --- */
+section {
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:50px 20px;
+  color:white;
+  text-align:center;
+  transition:all 0.6s ease;
+}
+
+/* --- Header Section --- */
+#home {
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+#home img {
+  width:200px; height:200px; border-radius:50%; border:5px solid #ffcc00; object-fit:cover;
+  box-shadow:0 15px 35px rgba(0,0,0,0.5);
+  animation: zoomIn 1.5s;
+}
+#home h1 { margin-top:20px; font-size:3rem; color:#ffcc00; animation: fadeIn 2s; }
+#home p { font-size:1.2rem; color:#ddd; margin-top:10px; animation: fadeIn 2.5s; }
+
+/* --- About Me Section --- */
+#about { background: linear-gradient(135deg,#4e54c8,#8f94fb); }
+#about h2 { font-size:2.5rem; margin-bottom:20px; color:#ffcc00; }
+#about p {
+  max-width:800px;
+  font-size:1.2rem;
+  line-height:1.8;
+  margin-bottom:20px;
+  color:#f0f0f0;
+}
+
+/* --- Biography Section --- */
+#bio { background: linear-gradient(135deg,#ff416c,#ff4b2b); }
+#bio h2 { font-size:2.5rem; margin-bottom:20px; color:#00ffcc; }
+#bio p { max-width:800px; font-size:1.2rem; line-height:1.8; margin-bottom:20px; }
+
+/* --- Inspiration Section --- */
+#inspire { background: linear-gradient(135deg,#11998e,#38ef7d); }
+#inspire h2 { font-size:2.5rem; margin-bottom:20px; color:#ffcc00; }
+#inspire .quote { font-size:1.2rem; font-style:italic; margin:15px 0; color:#fff; }
+
+/* --- Skills Section --- */
+#skills { background: linear-gradient(135deg,#f7971e,#ffd200); }
+#skills h2 { font-size:2.5rem; margin-bottom:20px; color:#203a43; }
+#skills p { max-width:800px; font-size:1.2rem; line-height:1.6; margin-bottom:20px; color:#203a43; }
+
+/* --- Footer --- */
+footer { background:#000; padding:20px; text-align:center; color:#aaa; }
+
+/* --- Animations --- */
+@keyframes zoomIn { from {transform:scale(0.5);} to {transform:scale(1);} }
+@keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+
+/* --- Navigation --- */
+nav {
+  position:fixed;
+  top:0; left:0; width:100%;
+  display:flex; justify-content:center;
+  background:rgba(0,0,0,0.6);
+  padding:15px 0;
+  z-index:100;
+}
+nav a {
+  color:white;
+  text-decoration:none;
+  margin:0 15px;
+  font-weight:bold;
+  transition:0.3s;
+}
+nav a:hover { color:#ffcc00; }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About Me</a>
+  <a href="#bio">Biography</a>
+  <a href="#inspire">Inspiration</a>
+  <a href="#skills">Skills & Vision</a>
+</nav>
+
+<!-- Home Section -->
+<section id="home">
+  <img src="profile.jpg" alt="Joachim James Daudu">
+  <h1>Joachim James Daudu</h1>
+  <p>Computer Science Student | Tech Innovator | Future Leader</p>
+</section>
+
+<!-- About Me Section -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am <strong>Joachim James Daudu</strong>, a passionate 200 Level Computer Science student at 
+    <strong>Taraba State University, Jalingo</strong>. I live at <strong>Dinyavoh Mile Six, Jalingo</strong>.
+  </p>
+  <p>
+    I am deeply curious about technology and constantly explore new programming languages, tools, and digital solutions. 
+    My aim is to combine creativity with technical skills to solve real-world problems and make life easier for people. 
+  </p>
+  <p>
+    Known for my determination, discipline, and willingness to learn, I strive to grow not just academically, but also practically, 
+    developing solutions that impact society positively. I believe that every challenge is an opportunity to innovate and improve.
+  </p>
+</section>
+
+<!-- Biography Section -->
+<section id="bio">
+  <h2>Biography</h2>
+  <p>
+    From a young age, I have been fascinated by computers, coding, and the way technology shapes our world. 
+    This passion led me to pursue Computer Science, where I have grown a strong foundation in programming, 
+    software development, and problem-solving.
+  </p>
+  <p>
+    I am committed to using technology as a force for good, creating solutions that are not just functional, but meaningful. 
+    My personal mission is to build software and systems that simplify lives, empower communities, and inspire others to innovate.
+  </p>
+  <p>
+    Beyond academics, I love exploring new tech trends, collaborating with like-minded individuals, and constantly pushing 
+    myself to achieve excellence in everything I do.
+  </p>
+</section>
+
+<!-- Inspiration Section -->
+<section id="inspire">
+  <h2>Inspiring Ideas</h2>
+  <p class="quote">💡 "Technology is the bridge between imagination and reality."</p>
+  <p class="quote">🚀 "Every line of code is a step toward the future."</p>
+  <p class="quote">🔥 "Success in tech comes from curiosity, consistency, and courage."</p>
+  <p class="quote">🌍 "I aim to create solutions that change lives and communities."</p>
+</section>
+
+<!-- Skills & Vision Section -->
+<section id="skills">
+  <h2>Skills & Vision</h2>
+  <p>
+    Skills: Programming (Python, C++, Java), Web Development (HTML, CSS, JavaScript), Problem Solving, Algorithm Design, 
+    and Technology Innovation.
+  </p>
+  <p>
+    My vision is to become a skilled software developer and tech innovator who builds impactful digital solutions, inspires 
+    young people in technology, and contributes to global technological advancement.
+  </p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 Joachim James Daudu | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
